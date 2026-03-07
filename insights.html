@@ -48,6 +48,7 @@
                 <ul class="nav-list">
                     <li><a href="index.html#inicio" class="nav-link">Inicio</a></li>
                     <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="casos.html" class="nav-link">Casos</a></li>
                     <li><a href="sobre-mi.html" class="nav-link">SOBRE MÍ</a></li>
                     <li><a href="insights.html" class="nav-link">Insights</a></li>
                     <li><a href="mailto:deazumendi@protonmail.com?subject=Contacto"
@@ -69,66 +70,116 @@
                 <div class="animate-on-scroll">
                     <h1 class="hero-title"
                         style="font-size: clamp(2.5rem, 5vw, 3.5rem); text-align: center; max-width: 900px; margin: 0 auto;">
-                        <strong>Por qué los periodistas son los mejores "prompters"</strong> <br><span class="highlight"
-                            style="font-size: 0.6em;">(aunque aún no lo sepan)</span>
+                        <strong>Insights: IA y Comunicación</strong>
                     </h1>
+                    <p style="font-size: 1.25rem; font-style: italic; color: var(--clr-slate-light); margin-top: 1rem; font-family: var(--font-serif); text-align: center;">
+                        Análisis, metodología y reflexiones sobre el impacto real de la IA en la comunicación corporativa.
+                    </p>
                 </div>
             </div>
             <div class="hero-bg-accent"></div>
         </section>
 
-        <!-- Content -->
+        <!-- Insights Grid -->
         <section class="section-padding bg-light">
-            <div class="container article-content animate-on-scroll delay-1">
-                <p>Durante los últimos meses, el mercado se ha llenado de términos técnicos: tokens,
-                    IA agéntica o ingeniería de prompts. Parece que para hablar con la Inteligencia Artificial
-                    hace falta un título en ingeniería. Pero la realidad es otra. Si buscas a alguien capaz de
-                    extraer el máximo potencial de un modelo de lenguaje, no busques a un programador.
-                    Busca a un profesional de la comunicación.</p>
+            <div class="container animate-on-scroll delay-1">
+                <style>
+                    .insights-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                        gap: 2.5rem;
+                        margin-top: 2rem;
+                    }
+                    .insight-card {
+                        background-color: var(--clr-white);
+                        border-radius: var(--radius-lg);
+                        padding: 2.5rem;
+                        box-shadow: var(--shadow-sm);
+                        border-top: 4px solid var(--clr-accent-blue);
+                        display: flex;
+                        flex-direction: column;
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    }
+                    .insight-card:hover {
+                        transform: translateY(-5px);
+                        box-shadow: var(--shadow-md);
+                    }
+                    .insight-meta {
+                        color: var(--clr-slate-light);
+                        font-size: 0.9rem;
+                        margin-bottom: 1rem;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .insight-card h3 {
+                        font-family: var(--font-serif);
+                        font-size: 1.4rem;
+                        color: var(--clr-primary);
+                        margin-bottom: 1rem;
+                        line-height: 1.4;
+                    }
+                    .insight-card p {
+                        color: var(--clr-slate-dark);
+                        line-height: 1.7;
+                        margin-bottom: 1.5rem;
+                        flex-grow: 1;
+                    }
+                    .read-more {
+                        color: var(--clr-accent-blue);
+                        font-weight: 600;
+                        text-decoration: none;
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                    }
+                    .read-more:hover {
+                        text-decoration: underline;
+                    }
+                </style>
 
-                <p>La esencia de la IA generativa no reside en el código, sino en el lenguaje natural.
-                    Ahí es donde el profesional de la información lleva décadas de ventaja. Aquí explico por qué
-                    nuestro oficio es la base de la mejor ingeniería que existe.</p>
+                <div class="insights-grid">
+                    
+                    <div class="insight-card">
+                        <div class="insight-meta">
+                            <span>17 de marzo de 2026</span>
+                            <span>Gabinetes</span>
+                        </div>
+                        <h3><a href="insights/ia-gabinetes-prensa.html" style="color: inherit; text-decoration: none;">IA para gabinetes de prensa: dónde ayuda y dónde crea problemas</a></h3>
+                        <p>Qué puede aportar la IA a un gabinete de prensa, qué errores introduce cuando se usa sin protocolo y por qué el criterio sigue siendo decisivo.</p>
+                        <a href="insights/ia-gabinetes-prensa.html" class="read-more">Leer artículo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                    </div>
 
-                <h3><strong>1. El arte de preguntar</strong></h3>
-                <p>Un prompt no es más que una pregunta o una instrucción. Los periodistas y los comunicadores
-                    llevamos toda la vida perfeccionando el arte de la entrevista. Sabemos que si haces una pregunta
-                    genérica, obtienes una respuesta vaga. Conocemos cómo detectar una fuente (o una IA) que nos
-                    está dando una respuesta evasiva y sabemos repreguntar para llegar al fondo del asunto.
-                    Interactuar con un modelo de lenguaje como Gemini, Claude o ChatGPT es, en esencia,
-                    una entrevista de documentación continua.</p>
+                    <div class="insight-card">
+                        <div class="insight-meta">
+                            <span>7 de abril de 2026</span>
+                            <span>Formación</span>
+                        </div>
+                        <h3><a href="insights/formacion-ia-comunicadores.html" style="color: inherit; text-decoration: none;">Qué debería pedir un equipo de comunicación a una formación en IA</a></h3>
+                        <p>Muchas formaciones en IA para comunicadores enseñan herramientas. Pocas ayudan a ordenar procesos, criterios y protocolos. Esto es lo que conviene exigir.</p>
+                        <a href="insights/formacion-ia-comunicadores.html" class="read-more">Leer artículo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                    </div>
 
-                <h3><strong>2. La obsesión por el contexto</strong></h3>
-                <p>Un ingeniero ve datos; un periodista ve contextos. Para que una IA genere un texto útil para una
-                    marca o una institución, necesita entender el "para qué", el "quién" y el "dónde". Los periodistas
-                    somos expertos en el background. No tenemos ninguna duda de que una nota de prensa no solo
-                    necesita información, sino tono, intención y conocimiento del receptor. Ese contexto es el 80% de
-                    un prompt exitoso.</p>
+                    <div class="insight-card">
+                        <div class="insight-meta">
+                            <span>5 de mayo de 2026</span>
+                            <span>Gestión de equipos</span>
+                        </div>
+                        <h3><a href="insights/ia-equipo-junior-comunicacion.html" style="color: inherit; text-decoration: none;">El error de delegar la IA al perfil más joven del equipo de comunicación</a></h3>
+                        <p>Delegar el uso de IA al perfil junior del departamento parece práctico. Suele ser un error de criterio y de gobernanza que tiene consecuencias reputacionales.</p>
+                        <a href="insights/ia-equipo-junior-comunicacion.html" class="read-more">Leer artículo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                    </div>
 
-                <h3><strong>3. La economía del lenguaje</strong></h3>
-                <p>La IA trabaja mejor con instrucciones claras, directas y sin ambigüedades. A los periodistas nos han
-                    enseñado a podar adjetivos, a evitar el relleno y a ir al grano. Esa capacidad de síntesis y
-                    precisión
-                    es lo que diferencia a un prompt mediocre de uno de alto rendimiento. Escribir para la IA es, en
-                    muchos sentidos, volver a las bases del estilo periodístico: claridad, orden y concisión.</p>
+                    <div class="insight-card">
+                        <div class="insight-meta">
+                            <span>2 de junio de 2026</span>
+                            <span>Prompting</span>
+                        </div>
+                        <h3><a href="insights/radio-periodismo-prompts-ia.html" style="color: inherit; text-decoration: none;">Lo que enseña la radio sobre prompts, contexto y verificación en IA</a></h3>
+                        <p>La experiencia en radio entrena habilidades que encajan bien con el trabajo con modelos de lenguaje: precisión en la instrucción, gestión del contexto y verificación.</p>
+                        <a href="insights/radio-periodismo-prompts-ia.html" class="read-more">Leer artículo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                    </div>
 
-                <h3><strong>4. El instinto de verificación (Antídotos contra la alucinación)</strong></h3>
-                <p>Este es el punto más crítico. La IA puede inventar, "alucinar" y ofrecer datos erróneos con una
-                    seguridad pasmosa. Un usuario medio puede dar por bueno un dato falso; un periodista, por
-                    deformación profesional, duda. Tenemos el hábito de contrastar y verificar integrado en nuestro ADN.
-                    En la comunicación corporativa, donde un error puede destruir una reputación en minutos, este
-                    instinto es el único seguro de vida real.</p>
-
-                <h3><strong>5. La jerarquía de la información</strong></h3>
-                <p>Sabemos qué es noticia y qué es ruido. Al usar IA, el riesgo es generar volumen en lugar de valor. El
-                    periodista sabe jerarquizar la salida de la IA, editarla y darle el sentido estratégico que una
-                    máquina, por definición, no tiene.</p>
-
-                <p>
-                    En definitiva, la IA no ha venido a sustituir nuestra capacidad de pensar, sino a optimizar nuestro
-                    oficio. Los periodistas no necesitamos aprender a programar; necesitamos darnos cuenta de que
-                    llevamos veinte años practicando la mejor ingeniería de prompts posible: la de saber contar
-                    historias y saber preguntar para llegar a la verdad.</p>
+                </div>
             </div>
         </section>
 
@@ -162,6 +213,7 @@
             <div class="footer-links" style="margin-bottom: 1.5rem; justify-content: center; flex-wrap: wrap;">
                 <a href="index.html#inicio">Inicio</a>
                 <a href="servicios.html">Servicios</a>
+                <a href="casos.html">Casos</a>
                 <a href="sobre-mi.html">SOBRE MÍ</a>
                 <a href="insights.html">Insights</a>
                 <a href="privacidad.html">Política de Privacidad</a>
