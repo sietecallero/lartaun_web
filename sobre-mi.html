@@ -82,18 +82,21 @@
         @media (min-width: 992px) {
             .about-grid {
                 flex-direction: row;
-                align-items: center;
-                /* Center vertically for better balance */
+                align-items: flex-start;
+                /* Align to top instead of center */
             }
 
             .about-content {
-                flex: 1;
+                flex: 1.2;
                 padding-right: 4rem;
             }
 
             .about-image-wrapper {
-                flex: 1.5;
-                /* Makes the image significantly larger without crushing text */
+                flex: 1;
+                /* Keeps image proportional */
+                position: sticky;
+                top: 120px;
+                /* Elegant sticky scrolling */
             }
         }
     </style>
