@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí | Lartaun de Azumendi — Consultor IA y Comunicación Corporativa</title>
+    <meta name="description" content="Dos décadas entre la Cadena COPE, BBVA y La Moncloa. Hoy ayudo a dircoms y gabinetes de comunicación a integrar la IA generativa sin perder el criterio periodístico.">
+    
+    <!-- Schema markup: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lartaun de Azumendi Beistegui",
+      "url": "https://www.lartaun.info",
+      "jobTitle": "Consultor de Comunicación Corporativa e Inteligencia Artificial",
+      "description": "Consultor y formador especializado en IA aplicada a la comunicación corporativa. Veinte años de trayectoria en periodismo y comunicación institucional: Cadena COPE, Secretaría de Estado de Comunicación (La Moncloa), BBVA y agencia propia Nobis.",
+      "knowsAbout": ["Inteligencia Artificial Generativa", "Comunicación Corporativa", "Formación de equipos de comunicación", "Gabinetes de prensa", "Prompt engineering para comunicadores", "Transformación digital en comunicación"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Lartaun — Consultoría de Comunicación e IA",
+        "url": "https://www.lartaun.info"
+      },
+      "alumniOf": "Cadena COPE",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Madrid",
+        "addressCountry": "ES"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/lartaun/"
+      ]
+    }
+    </script>
+  
+    <!-- Schema markup: ProfessionalService -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Lartaun de Azumendi — Consultoría de Comunicación e IA",
+      "url": "https://www.lartaun.info",
+      "description": "Consultoría y formación en IA aplicada a comunicación corporativa, gabinetes de prensa y agencias. Basado en Madrid, con proyectos en España y Latinoamérica.",
+      "founder": {
+        "@type": "Person",
+        "name": "Lartaun de Azumendi Beistegui"
+      },
+      "areaServed": ["España", "Latinoamérica"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Madrid",
+        "addressCountry": "ES"
+      },
+      "sameAs": "https://www.linkedin.com/in/lartaun/"
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-page-content {
+            margin: 0 auto;
+        }
+
+        .about-text {
+            color: var(--clr-slate-dark);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        @media (min-width: 992px) {
+            .about-grid {
+                flex-direction: row;
+                align-items: center;
+                /* Center vertically for better balance */
+            }
+
+            .about-content {
+                flex: 1;
+                padding-right: 4rem;
+            }
+
+            .about-image-wrapper {
+                flex: 1.5;
+                /* Makes the image significantly larger without crushing text */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="main-header" class="header">
+        <div class="container header-content">
+            <div class="header-left" style="display: flex; align-items: center; gap: 1rem;">
+                <a href="index.html" class="logo">Lartaun de Azumendi</a>
+                <a href="metodo.html" class="btn btn-primary sm-btn"
+                    style="background-color: var(--clr-accent-blue); padding: 0.4rem 1rem; border-radius: 50px; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.5px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">El
+                    Método Lartaun</a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="sobre-mi.html" class="nav-link">SOBRE MÍ</a></li>
+                    <li><a href="insights.html" class="nav-link">Insights</a></li>
+                    <li><a href="mailto:deazumendi@protonmail.com?subject=Contacto"
+                            class="btn btn-primary sm-btn">Contactar</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Header -->
+        <section class="hero section-padding" style="min-height: auto; padding-top: 150px; padding-bottom: 50px;">
+            <div class="container">
+                <div class="animate-on-scroll">
+                    <h1 class="hero-title" style="font-size: clamp(2.5rem, 5vw, 3.5rem); text-align: center;">Veinte años en la información. <br><span class="highlight">Una nueva etapa en comunicación.</span></h1>
+                </div>
+            </div>
+            <div class="hero-bg-accent"></div>
+        </section>
+
+        <!-- Content -->
+        <section class="section-padding bg-light">
+            <div class="container animate-on-scroll delay-1">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <p class="about-text">No soy ingeniero. No soy programador. Soy periodista y consultor de comunicación con dos décadas de trayectoria real en los lugares donde la información y el poder se cruzan: la redacción, el gabinete de prensa y la sala de crisis.</p>
+
+                        <p class="about-text">Empecé en la <strong>Cadena COPE</strong>, donde trabajé durante diez años. Ahí aprendí lo que ningún máster enseña: la presión del directo, la verificación bajo tiempo, la diferencia entre información y ruido, y la única pregunta que importa en comunicación, que es siempre la misma: ¿esto es verdad y a quién le importa?</p>
+                        
+                        <p class="about-text">De la radio salté a la comunicación institucional. Trabajé en <strong>La Moncloa</strong>, en la Secretaría de Estado de Comunicación, donde la gestión del mensaje adquiere una dimensión diferente: cada palabra tiene consecuencias, cada silencio también. Después vino <strong>BBVA</strong>, uno de los entornos corporativos más exigentes en materia de comunicación de este país. Y más tarde fundé <strong>Nobis</strong>, mi propia agencia, donde apliqué todo ese acervo al servicio de organizaciones que necesitaban comunicar con criterio, no solo con presupuesto.</p>
+                        
+                        <p class="about-text">Hoy combino una función asesora en la <strong>Secretaría de Estado de Comunicación</strong> con esta línea independiente de consultoría y formación. El hilo conductor de los veinte años es siempre el mismo: el lenguaje como instrumento estratégico.</p>
+                        
+                        <h2 class="section-title" style="font-size: 2rem; margin-top: 3rem; margin-bottom: 1.5rem;">Por qué la IA y por qué ahora</h2>
+                        
+                        <p class="about-text">Llevo años usando herramientas de inteligencia artificial en mi trabajo diario. No como experimento, sino como parte del flujo de trabajo real. He visto de primera mano lo que funciona, lo que falla y, sobre todo, los errores que cometen los equipos de comunicación cuando se acercan a estas herramientas sin el marco adecuado: o las rechazan por miedo o las abrazan sin criterio.</p>
+                        
+                        <p class="about-text">Ninguna de las dos posiciones sirve. La IA generativa ha llegado para quedarse y está reconfigurando la forma en que los gabinetes de prensa trabajan, cómo se redactan notas y comunicados, cómo se monitoriza la reputación, cómo se gestionan las crisis. Ignorarlo es perder terreno. Adoptarlo sin metodología es asumir riesgos reputacionales que ninguna organización puede permitirse.</p>
+                        
+                        <p class="about-text">Mi trabajo consiste en ocupar ese espacio intermedio: el del profesional que conoce el oficio desde dentro y que ha desarrollado un sistema —el <strong>Método Lartaun</strong>— para integrar la IA generativa en los flujos de trabajo de comunicación corporativa sin perder lo que hace que una organización comunique bien: el criterio, la ética y la voz propia.</p>
+                        
+                        <h2 class="section-title" style="font-size: 2rem; margin-top: 3rem; margin-bottom: 1.5rem;">Para quién trabajo</h2>
+                        
+                        <p class="about-text">Trabajo con <strong>directores de comunicación</strong> que necesitan una hoja de ruta clara para la transformación digital de su área. Con <strong>gabinetes de prensa institucionales</strong> que quieren aumentar su capacidad operativa sin crecer en plantilla. Con <strong>agencias de comunicación</strong> que ven cómo la IA redefine su propuesta de valor y necesitan adelantarse. Y con organizaciones —sanitarias, educativas, empresariales— que están en el inicio del proceso y necesitan no cometer los errores que ya han cometido otros.</p>
+                        
+                        <p class="about-text">Mi base es Madrid. Mi alcance es España y Latinoamérica.</p>
+                    </div>
+                    <div class="about-image-wrapper">
+                        <figure style="margin: 0;">
+                            <img src="img/leyendo-la-prensa-del-dia.jpg" alt="Leyendo la prensa del día"
+                                class="about-image"
+                                style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); width: 100%; height: auto;">
+                            <figcaption
+                                style="text-align: center; color: var(--clr-slate-light); font-size: 0.9rem; font-style: italic; margin-top: 0.75rem;">
+                                Leyendo la prensa del día</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / Contact -->
+        <section id="contacto" class="contact section-padding bg-dark text-white">
+            <div class="container contact-container">
+                <div class="contact-content animate-on-scroll">
+                    <h2 class="section-title">¿Hablamos sobre el presente de tu comunicación?</h2>
+                    <p class="contact-desc">Descubre cómo la IA puede optimizar la estrategia de tu organización.</p>
+                    <a href="mailto:deazumendi@protonmail.com?subject=Contacto"
+                        class="btn btn-primary btn-large mt-4">Ponte en contacto</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content" style="text-align: center;">
+            <div class="footer-info" style="margin-bottom: 1.5rem;">
+                <p style="font-weight: 700; color: var(--clr-slate-dark); font-size: 1.1rem; margin-bottom: 0.5rem;">
+                    Lartaun | Comunicación Estratégica e Inteligencia Artificial</p>
+                <p style="color: var(--clr-slate-light); margin-bottom: 1rem;">Consultoría y formación basada en Madrid,
+                    para España y Latinoamérica.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="https://www.linkedin.com/in/lartaun/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-secondary sm-btn">LinkedIn</a>
+                    <a href="mailto:deazumendi@protonmail.com?subject=Contacto"
+                        class="btn btn-primary sm-btn">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-links" style="margin-bottom: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                <a href="index.html#inicio">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="sobre-mi.html">SOBRE MÍ</a>
+                <a href="insights.html">Insights</a>
+                <a href="privacidad.html">Política de Privacidad</a>
+                <a href="aviso-legal.html">Aviso Legal</a>
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="year"></span> Lartaun de Azumendi. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
