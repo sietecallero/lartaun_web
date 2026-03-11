@@ -256,6 +256,10 @@ h4,
     white-space: nowrap;
 }
 
+.header-left .btn {
+    white-space: nowrap;
+}
+
 .nav-list {
     display: flex;
     gap: 1.5rem;
@@ -646,7 +650,7 @@ h4,
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .nav-list {
         position: fixed;
         top: 0;
@@ -688,7 +692,7 @@ h4,
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .section-padding {
         padding: var(--space-lg) 0;
     }
@@ -700,5 +704,26 @@ h4,
 
     .statement-banner {
         padding: 2rem 1rem;
+    }
+
+    .header-left {
+        gap: 0.5rem !important;
+        flex-shrink: 1;
+        min-width: 0;
+    }
+    
+    .logo {
+        font-size: 0.95rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .header-left .sm-btn {
+        padding: 0.35rem 0.6rem !important;
+        font-size: 0.7rem !important;
+        letter-spacing: 0 !important;
+        white-space: nowrap !important;
+        flex-shrink: 0;
     }
 }
