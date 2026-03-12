@@ -114,6 +114,44 @@
             }
         }
     </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://www.lartaun.info/"
+          }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Sobre mí",
+            "item": "https://www.lartaun.info/sobre-mi.html"
+          }]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.lartaun.info/#website",
+          "url": "https://www.lartaun.info/",
+          "name": "Lartaun de Azumendi",
+          "description": "Consultoría y formación en Inteligencia Artificial para comunicación corporativa."
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.lartaun.info/#lartaun",
+          "name": "Lartaun de Azumendi Beistegui",
+          "jobTitle": "Consultor de Comunicación y Periodista",
+          "url": "https://www.lartaun.info/",
+          "knowsAbout": ["Comunicación Corporativa", "Inteligencia Artificial", "Reputación de Marca", "Relaciones Públicas"]
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>

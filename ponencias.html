@@ -10,6 +10,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://www.lartaun.info/"
+          }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ponencias",
+            "item": "https://www.lartaun.info/ponencias.html"
+          }]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://www.lartaun.info/#consultoria",
+          "name": "Lartaun Consultoría IA",
+          "url": "https://www.lartaun.info/ponencias.html",
+          "description": "Servicios de consultoría, formación in-company y conferencias sobre inteligencia artificial aplicada a equipos de comunicación para perfiles no técnicos.",
+          "provider": {
+            "@type": "Person",
+            "@id": "https://www.lartaun.info/#lartaun"
+          },
+          "areaServed": "España y Latinoamérica"
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="bg-light">
     <header id="main-header" class="header">
