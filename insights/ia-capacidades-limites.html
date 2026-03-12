@@ -69,6 +69,11 @@
                     <li><a href="../insights.html" class="nav-link">Insights</a></li>
                     <li><a href="../contacto.html" class="btn btn-primary sm-btn">Contactar</a></li>
                 </ul>
+                <button class="mobile-menu-btn" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
         </div>
     </header>
@@ -121,8 +126,33 @@
 
     <footer class="footer">
         <div class="container footer-content" style="text-align: center;">
-            <div class="footer-copy">&copy; 2024 Lartaun de Azumendi. Todos los derechos reservados.</div>
+            <div class="footer-info" style="margin-bottom: 1.5rem;">
+                <p style="font-weight: 700; color: var(--clr-slate-dark); font-size: 1.1rem; margin-bottom: 0.5rem;">
+                    Lartaun | Comunicación Estratégica e Inteligencia Artificial</p>
+                <p style="color: var(--clr-slate-light); margin-bottom: 1rem;">Consultoría y formación basada en Madrid,
+                    para España y Latinoamérica.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="https://www.linkedin.com/in/lartaun/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-secondary sm-btn">LinkedIn</a>
+                    <a href="../contacto.html"
+                        class="btn btn-primary sm-btn">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-links" style="margin-bottom: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                <a href="../index.html#inicio">Inicio</a>
+                <a href="../servicios.html">Servicios</a>
+                <a href="../ponencias.html">Ponencias</a>
+                <a href="../casos.html">Casos</a>
+                <a href="../sobre-mi.html">SOBRE MÍ</a>
+                <a href="../insights.html">Insights</a>
+                <a href="../privacidad.html">Política de Privacidad</a>
+                <a href="../aviso-legal.html">Aviso Legal</a>
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="year"></span> Lartaun de Azumendi. Todos los derechos reservados.
+            </div>
         </div>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>
