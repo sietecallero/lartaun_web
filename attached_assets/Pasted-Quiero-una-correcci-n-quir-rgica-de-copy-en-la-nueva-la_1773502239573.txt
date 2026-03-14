@@ -1,0 +1,49 @@
+Quiero una corrección quirúrgica de copy en la nueva landing y no quiero que toques nada más.
+
+PÁGINA A MODIFICAR
+/consultoria-inteligencia-artificial-comunicacion-corporativa
+
+REGLA
+Sustituye exactamente los textos originales por estas nuevas versiones. No reescribas nada adicional. No cambies diseño, estructura, enlaces, títulos ni espaciados. Solo estas sustituciones literales.
+
+CAMBIOS
+
+1)
+Texto original:
+Prometer resultados cuantificables en escenarios que no he podido diagnosticar antes
+
+Sustituir por:
+Prometer resultados cuantificables en escenarios que no haya podido diagnosticar previamente.
+
+2)
+Texto original:
+La mayoría de las formaciones sobre IA vienen del mundo tecnológico. Este trabajo viene del oficio de la comunicación.
+
+Sustituir por:
+La mayoría de las formaciones sobre IA vienen del mundo tecnológico. Mi enfoque, sin embargo, viene del oficio de la comunicación.
+
+3)
+Texto original:
+Veinte años en primera línea —periodismo en Cadena COPE, comunicación financiera en BBVA, comunicación institucional en La Moncloa— permiten entender no solo cómo funciona la herramienta, sino qué puede comprometer la reputación de una organización cuando se usa sin criterio.
+
+Sustituir por:
+Veinte años en primera línea —periodismo en Cadena COPE, comunicación corporativa en BBVA, comunicación institucional en La Moncloa— permiten entender no solo cómo funciona la herramienta, sino qué puede comprometer la reputación de una organización cuando se utiliza sin criterio.
+
+4)
+Texto original:
+Base operativa en Madrid. Talleres presenciales in-company y conferencias disponibles en cualquier ciudad española, con desplazamiento para grupos desde ocho personas.
+
+Sustituir por:
+Base operativa en Madrid. Talleres presenciales in-company y conferencias disponibles en cualquier ciudad española, con desplazamiento para grupos desde cinco personas.
+
+5)
+Texto original:
+Consultoría estratégica y formación en formato remoto o híbrido para clientes e instituciones en México, Argentina, Colombia, Chile y el resto de la región.
+
+Sustituir por:
+Consultoría estratégica y formación en formato remoto o híbrido para clientes e instituciones en México, Argentina, Colombia, Chile y el resto del continente.
+
+AL FINAL DIME SOLO:
+- archivo modificado
+- número de sustituciones aplicadas
+- confirmación de que no se ha tocado nada más
