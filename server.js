@@ -34,8 +34,21 @@ function tryServeFile(filePath, res) {
   });
 }
 
+const REDIRECTS = {
+  '/consultor-inteligencia-artificial-comunicacion-corporativa':
+    '/consultoria-inteligencia-artificial-comunicacion-corporativa',
+  '/consultor-inteligencia-artificial-comunicacion-corporativa.html':
+    '/consultoria-inteligencia-artificial-comunicacion-corporativa',
+};
+
 const server = http.createServer((req, res) => {
   let urlPath = req.url.split('?')[0];
+
+  if (REDIRECTS[urlPath]) {
+    res.writeHead(301, { Location: REDIRECTS[urlPath] });
+    res.end();
+    return;
+  }
 
   if (urlPath === '/') {
     urlPath = '/index.html';
