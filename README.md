@@ -1,2 +1,2 @@
 # Lartaun Web
-Consultor IA para Comunicaci
+Consultor IA para comunicación coporativa
