@@ -1,0 +1,11 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/consultor-inteligencia-artificial-comunicacion-corporativa",
+      "destination": "/consultoria-inteligencia-artificial-comunicacion-corporativa",
+      "permanent": true
+    }
+  ]
+}
