@@ -726,4 +726,26 @@ h4,
         white-space: nowrap !important;
         flex-shrink: 0;
     }
+
+   .article-cta {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--clr-accent-blue);
+    margin-top: 3rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.article-cta h4 {
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+    color: var(--clr-slate-dark);
+}
+
+.article-cta p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    color: var(--clr-slate-dark);
+    line-height: 1.7;
+}
 }
