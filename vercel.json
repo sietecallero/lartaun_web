@@ -6,6 +6,11 @@
       "source": "/consultor-inteligencia-artificial-comunicacion-corporativa",
       "destination": "/consultoria-inteligencia-artificial-comunicacion-corporativa",
       "permanent": true
+    },
+    {
+      "source": "/triage",
+      "destination": "/Las_5_preguntas_del_Triage.pdf",
+      "permanent": false
     }
   ]
 }
