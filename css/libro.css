@@ -206,6 +206,61 @@ h1 .highlight {
   color: #fff;
 }
 
+/* ------------------ INFO BOX ------------------ */
+.info-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  max-width: 450px;
+  margin: 1.5rem auto 0;
+  text-align: left;
+}
+
+.info-box h4 {
+  font-size: 0.85rem;
+  color: #10B981;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-item {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.info-item:nth-of-type(1)::before {
+  content: "1.";
+  position: absolute;
+  left: 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.info-item:nth-of-type(2)::before {
+  content: "2.";
+  position: absolute;
+  left: 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-box hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  width: 70%;
+  margin: 0.75rem 0;
+}
+
 /* ------------------ COVER IMAGE (Optional but recommended) ------------------ */
 .book-cover-wrapper {
   width: 100%;
