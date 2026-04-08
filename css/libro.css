@@ -1,0 +1,253 @@
+/* ==========================================================================
+   Landing Page - Si llegas un poco tarde a la IA, este es tu gran atajo
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap');
+
+:root {
+  --brand-red: #D32F2F;
+  --brand-red-dark: #B71C1C;
+  --bg-dark: #0f1218;
+  --bg-card: rgba(25, 30, 40, 0.7);
+  --text-primary: #f5f5f7;
+  --text-secondary: #a1a1aa;
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Fondo dinámico sutil */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at 15% 15%, rgba(211, 47, 47, 0.08) 0%, transparent 40%),
+              radial-gradient(circle at 85% 85%, rgba(60, 60, 70, 0.2) 0%, transparent 40%);
+  z-index: -1;
+}
+
+/* ------------------ LAYOUT ------------------ */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hero-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ------------------ TIPOGRAFÍA ------------------ */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h1 .highlight {
+  color: var(--brand-red);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  font-weight: 300;
+}
+
+.copy-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.1rem;
+  color: #d1d5db;
+}
+
+.copy-section p {
+  animation: fadeUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+/* Staggered animation */
+.copy-section p:nth-child(1) { animation-delay: 0.1s; }
+.copy-section p:nth-child(2) { animation-delay: 0.2s; }
+.copy-section p:nth-child(3) { animation-delay: 0.3s; }
+.copy-section p:nth-child(4) { animation-delay: 0.4s; }
+.copy-section p:nth-child(5) { animation-delay: 0.5s; }
+
+.dialogue {
+  font-style: italic;
+  color: #fff;
+  border-left: 3px solid var(--brand-red);
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+/* ------------------ CARD / GLASSMORPHISM ------------------ */
+.book-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(211, 47, 47, 0.4);
+}
+
+.book-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.feature-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--brand-red);
+  font-weight: bold;
+}
+
+/* ------------------ CTA ------------------ */
+.cta-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--brand-red), var(--brand-red-dark));
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(211, 47, 47, 0.3);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-25deg);
+  transition: all 0.7s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 15px 25px rgba(211, 47, 47, 0.4);
+}
+
+.btn:hover::after {
+  left: 200%;
+}
+
+.price-note {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 1rem;
+}
+
+.price-note strong {
+  color: #fff;
+}
+
+/* ------------------ COVER IMAGE (Optional but recommended) ------------------ */
+.book-cover-wrapper {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
+  transition: transform 0.5s ease;
+}
+
+.book-cover-wrapper:hover {
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+}
+
+.book-cover-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ------------------ ANIMATIONS ------------------ */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 2.5rem 1rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  .book-card {
+    padding: 1.5rem;
+  }
+}
