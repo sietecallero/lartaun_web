@@ -261,26 +261,26 @@ h1 .highlight {
   margin: 0.75rem 0;
 }
 
-/* ------------------ COVER IMAGE (Optional but recommended) ------------------ */
+/* ------------------ COVER IMAGE ------------------ */
 .book-cover-wrapper {
   width: 100%;
-  max-width: 320px;
-  margin: 0 auto 2rem;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-  transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
-  transition: transform 0.5s ease;
+  max-width: 500px; /* Aumentado sustancialmente */
+  margin: 0 auto 1.5rem;
+  transform: perspective(1000px) rotateY(-2deg) rotateX(1deg);
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  display: flex;
+  justify-content: center;
 }
 
 .book-cover-wrapper:hover {
-  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+  transform: perspective(1000px) rotateY(2deg) rotateX(-2deg) scale(1.03);
 }
 
 .book-cover-wrapper img {
   width: 100%;
   height: auto;
   display: block;
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
 }
 
 /* ------------------ ANIMATIONS ------------------ */
