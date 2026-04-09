@@ -248,6 +248,14 @@ h1 .highlight {
   font-weight: 600;
 }
 
+.info-item:nth-of-type(3)::before {
+  content: "3.";
+  position: absolute;
+  left: 0;
+  color: #fff;
+  font-weight: 600;
+}
+
 .info-item:last-child {
   margin-bottom: 0;
 }
