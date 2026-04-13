@@ -262,13 +262,13 @@ h4,
 
 .nav-list {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.0rem;
     align-items: center;
 }
 
 .nav-link {
     font-weight: 500;
-    font-size: 0.9375rem;
+    font-size: 0.9rem;
     color: var(--clr-slate-light);
     position: relative;
 }
